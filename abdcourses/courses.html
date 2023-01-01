@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column text-black" >
+<div class="align-content-center w-100 pt-2  mb-5 shadow" id="navbar">
+
+  <div class="row justify-content-between">
+<div class="col-1 d-flex justify-content-between ps-5">
+                <img src="./img/logo1.svg" alt="Logo" width="30px" height="40px">
+               <span class="fw-bolder fs-5 ps-2 align-self-center pb-2" id="logo" >ABDCourses </span> 
+</div>
+<div class="col-3">
+  <ul class="d-flex gap-3">
+    <li id="home" class="btn btn-outline-primary rounded-pill "> home </li>
+    <li id="coursesbtn" class="btn btn-primary rounded-pill "> Courses </li>
+    <li id="about" class="btn btn-outline-primary rounded-pill "> about </li>
+  </ul>
+</div>
+</div>
+</div>
+    <div class="container d-flex justify-content-center gap-3 p">
+   <div id="filter">
+    <div class="form-group">
+        <input id="search" type="text" class="form-control rounded-pill border-primary" placeholder="Rechercher...">
+      </div>
+      <div class="form-group">
+        <label for="category" class="fw-bold mt-3 mb-3">Category</label>
+        <select class="form-control" id="category">
+          <option selected>all</option>
+          <option value="js">javascript</option>
+          <option value="css">css</option>
+          <option value="html">html</option>
+          <option value="php">php</option>
+        </select>
+      </div>
+
+    <div class="form-group">
+    <label for="customRange3" class="form-label fw-bold mt-3">Price (<span id="displayRange"></span>) </label>
+    <br>
+<input  type="range" class="costume-range" value="80" min="0" max="80" step="1" id="customRange3">
+      </div>
+
+   </div>
+   <div id="courseList"></div> 
+</div>
+ <script src="./js/app.js"></script>
+ <script src="./js/listOfCourses.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <script src="./js/redirection.js"></script>
+</body>
+</html>

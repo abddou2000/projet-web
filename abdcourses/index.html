@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>index</title>
+</head>
+<body class="d-flex flex-column  ">
+<div class="align-content-center w-100 pt-2 shadow" id="navbar">
+
+  <div class="row justify-content-between">
+<div class="col-1 d-flex justify-content-between ps-5">
+                <img src="./img/logo1.svg" alt="Logo" width="30px" height="40px">
+               <span id="logo" class="fw-bolder fs-5 ps-2 align-self-center pb-2"  >ABDCourses </span> 
+</div>
+<div class="col-3">
+  <ul class="d-flex gap-3">
+    <li id="home" class="btn btn-primary rounded-pill "> home </li>
+    <li id="coursesbtn" class="btn btn-outline-primary rounded-pill "> Courses </li>
+    <li id="about" class="btn btn-outline-primary rounded-pill "> about </li>
+  </ul>
+</div>
+</div>
+</div>
+        <div id="landing">
+           <div class="container mt-3 rounded-5 d-flex flex-column   justify-content-center align-content-center" id="poster">
+            <pre style=" font-family: Consolas, monaco, monospace;font-size:40px; color: white;" >
+   1| while(isAlive(🧠)){ 
+   2|   eat(🍽️); 
+   3|   code(🐱‍💻); 
+   4|   sleep(💤);
+   5| }
+            </pre>
+            <button style="font-family: Consolas, monaco, monospace; font-weight: bolder;" id="coursesbtn" class="btn btn-primary w-25 p-3 rounded-pill align-self-center">▶️Courses List</button>
+           </div> 
+        </div>
+        <h1 class="align-self-center mt-3"><span style="color: rgb(238, 215, 8);">&lt; /</span> courses<span style="color: rgb(238, 215, 8);">&gt;</span></h1>
+        <div class="align-self-center mb-5" id="randCourses" >
+
+        </div>
+        <button id="coursesbtn" class="btn btn-primary p-2 rounded-pill align-self-center mb-5 " style="width: 200px;">all courses</button>
+        <div class="container text-center">
+          <p><span class="fw-bolder"> abdcourses</span>	&#169; 2022 - 2023</p>
+        </div>
+        <script src="./js/index.js"></script>
+        <script src="./js/listOfCourses.js"></script>
+        <script src="./js/redirection.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

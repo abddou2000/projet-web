@@ -1,0 +1,40 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,700&display=swap');
+#landing{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/background1.jpg');
+    background-size: cover;
+    background-position: start;
+}
+
+#poster {
+    background-color: rgba(23, 10, 72, 0.64);
+    height: 80vh ;
+
+}
+#courseList {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    column-gap: 10px;
+  row-gap: 15px;
+}
+#randCourses {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    column-gap: 10px;
+  row-gap: 15px;
+}
+.custom-range::-webkit-slider-runnable-track {
+    background-color: rgb(48, 33, 255);
+ }
+ #poster p {
+    color : white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 50px;
+ }
+ #logo{
+font-family: 'Chivo Mono', monospace;
+ }
